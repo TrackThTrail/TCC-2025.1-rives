@@ -7,10 +7,10 @@
 #define MAP_WIDTH 20
 #define MAP_HEIGHT 20
 #define TILE_SIZE 8
-#define MAX_OBSTACLES 5
+#define MAX_OBSTACLES 1
 #define ACTIONS 3  // 0 = esquerda, 1 = ficar, 2 = direita
 
-#define TRAINING_EPISODES 10000
+#define TRAINING_EPISODES 5000
 
 float Q[MAP_WIDTH / 2][MAP_WIDTH / 2][MAP_HEIGHT / 2][ACTIONS];
 

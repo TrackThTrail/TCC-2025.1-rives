@@ -100,7 +100,7 @@ class Agent:
         self.gamma = 0.99
         self.epsilon = 1.0
         self.epsilon_min = 0.01
-        self.epsilon_decay = 0.99
+        self.epsilon_decay = 0.995
         self.loss_fn = nn.MSELoss()
         self.batch_size = 64
         self.train_every = 4
@@ -168,7 +168,7 @@ def train(visualize, use_gpu):
 
     max_steps = 1000
 
-    for episode in range(1, 10001):
+    for episode in range(1, 501):
         state = game.reset()
         done = False
         ep_score = 0
